@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "/order")//создается раздел order, а начальный раздел store создан в конфигурационном файле
-                                   //application.properties
+//application.properties
 public class controller {
     private BasketServiceImpl basketService;
 
@@ -26,14 +26,13 @@ public class controller {
         return "Добро пожаловать на наш сайт";
     }
 
-
     @GetMapping(path = {"/add"})
     public void add(@RequestParam List<Integer> id) {
         basketService.addProductId(id);
     }
 
     @GetMapping(path = "/get")
-    public  List<Integer> get() {
+    public List<Integer> get() {
         return basketService.getProductId();
     }
 }
