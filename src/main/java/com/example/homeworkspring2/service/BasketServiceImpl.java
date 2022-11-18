@@ -7,7 +7,7 @@ import java.util.List;
 
 @Service
 @SessionScope
-public class BasketServiceImpl implements BasketService{
+public class BasketServiceImpl implements BasketService {
     private List<Integer> basket;
 
     public BasketServiceImpl(List<Integer> basket) {

@@ -4,5 +4,6 @@ import java.util.List;
 
 public interface BasketService {
     void addProductId(List<Integer> id);
-    List<Integer> getProductId ();
+
+    List<Integer> getProductId();
 }
